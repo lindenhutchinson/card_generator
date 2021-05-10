@@ -45,17 +45,12 @@ class WikiSongScraper(Scraper):
             text = row_data[genre['num']].get_text().strip("\n")
             song_artist = song_artist_re.findall(text)
             for s_a in song_artist:
-                # some necessary cleaning as the encoding leaves dirty strings on our data
-                song = s_a[0].strip("\n").replace('\"', '').replace(
-                    '\u2013', '-').replace('\u00e9', 'e')
-                artist = s_a[1].strip("\n").replace('\u00e9', 'e')
+                song = s_a[0].strip("\n").replace('\"', '')
+                artist = s_a[1].strip("\n")
                 if song == prev_song:
                     continue
                 prev_song = song
-                single = {
-                    'artist': artist,
-                    'song': song
-                }
+                single = f"{song} - {artist}"
 
                 song_data.append(single)
 
@@ -76,8 +71,11 @@ class WikiSongScraper(Scraper):
 
         self.write_to_json(song_data)
 
+    def run(self):
+        self.write_table_to_json()
+
 
 if __name__ == "__main__":
     url = "https://en.m.wikipedia.org/wiki/List_of_Billboard_Year-End_number-one_singles_and_albums"
     scraper = WikiSongScraper(url, '../data/song_data.json')
-    scraper.write_table_to_json()
+    scraper.run()

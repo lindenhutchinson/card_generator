@@ -3,11 +3,15 @@ from bs4 import BeautifulSoup
 import json
 import re
 import os
+import sys
 
-def get_current_path():
-    return os.path.dirname(os.path.abspath(__file__))
+parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.sys.path.insert(0,parentdir)
 
-class Scraper:
+from utils.common import Common
+
+
+class Scraper(Common):
     def __int__(self, url, output_file):
         self.url = url
         self.output_file = output_file
@@ -16,8 +20,3 @@ class Scraper:
         page = requests.get(self.url)
         return BeautifulSoup(page.content, "lxml")
 
-    def write_to_json(self, data):
-        json_data = json.dumps(data)
-
-        with open(f"{get_current_path()}/{self.output_file}", "w", encoding="utf8") as fn:
-            fn.writelines(json_data)
