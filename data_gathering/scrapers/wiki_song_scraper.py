@@ -9,17 +9,17 @@ class WikiSongScraper(Scraper):
     def __init__(self, url, output_file):
         self.url = url
         self.output_file = output_file
+        self.data = {
+            'game_text': '',
+            'answers': []
+        }
 
-    def append_to_song_data(self, row_data, song_data):
+    def append_to_data(self, row_data):
         """
-        Appends data from the table row to the passed song_data array and returns it back
+        Appends data from the table row to the object's data dictionary
 
         Args:
             row_data (array): A row of the wiki song table containing 7 tds 
-            song_data (array): An array of song_artist dictionaries {song: string, artist: string}
-
-        Returns:
-            song_data (array): The same array but with the relevent song_artist data from the row appended
 
         """
         # genre definitions and their magic numbers corresponding to their position in the table
@@ -52,24 +52,18 @@ class WikiSongScraper(Scraper):
                 prev_song = song
                 single = f"{song} - {artist}"
 
-                song_data.append(single)
-
-        return song_data
+                self.data['answers'].append(single)
 
     def write_table_to_json(self):
-        '''
-
-
-        '''
         soup = self.get_soup()
         table = soup.find("table")
-        song_data = []
+
         for tr in table.find_all("tr"):
             td_list = tr.find_all("td")
             if len(td_list) == 7:
-                song_data = self.append_to_song_data(td_list, song_data)
+                self.append_to_data(td_list)
 
-        self.write_to_json(song_data)
+        self.write_to_json(self.data)
 
     def run(self):
         self.write_table_to_json()

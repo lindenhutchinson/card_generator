@@ -1,0 +1,66 @@
+{
+  "creative_cat": {
+    "sculptorades": {
+      "game_type": "Sculptorades",
+      "game_info": "To win this Sculptorades, choose an artist from your team who can get you to guess the answer by sculpting the subject out of putty"
+    },
+    "sensosketch": {
+      "game_type": "Sensosketch",
+      "game_info": "To win this Sensosketch, choose an artist who can get you to guess the answer by drawing clues on paper with no talking, letters or symbols. The artist's eyes must stay closed"
+    },
+    "cloodle": {
+      "game_type": "Cloodle",
+      "game_info": "To win this Cloodle, choose an artist who can get you to guess the answer by drawing clues on paper with no talking, letters or symbols"
+    }
+  },
+  "data_head": {
+    "odd_couple": {
+      "game_type": "Odd Couple",
+      "game_info": "To win this Odd Couple, your team must correctly pick the two things that do not belong on the list below."
+    },
+    "selectaquest": {
+      "game_type": "Selectaquest",
+      "game_info": "To win this Selectaquest, your team must correctly answer the multiple-choice question below"
+    },
+    "polygraph": {
+      "game_type": "Polygraph",
+      "game_info": "To win this Polygraph, your team must determine whether the statement below is true or false"
+    },
+    "factoid": {
+      "game_type": "Factoid",
+      "game_info": "To win this Factoid, your team must correctly answer the question below"
+    }
+  },
+  "star_performer": {
+    "copycat": {
+      "game_type": "Copycat",
+      "game_info": "To win this Copycat, choose a performer from your team who can get you to guess the answer by acting like the famous person or character. The performer can talk like the person but cannot say names or people or places"
+    },
+    "humdinger": {
+      "game_type": "Humdinger",
+      "game_info": "To win this Humdinger, choose a performer from your team who can get you to guess the song by humming or whistling with no lyrics or gestures"
+    },
+    "sideshow": {
+      "game_type": "Sideshow",
+      "game_info": "To win this Sideshow, choose a performer from your team who can get you to guess the answer by moving a team-mate's arms and legs like a puppet, with no talking or sound effects. The puppet can help guess the answer"
+    },
+    "cameo": {
+      "game_type": "Cameo",
+      "game_info": "To win this Cameo, choose a performer from your team who can get you to guess the answer by acting out silect clues, just like charades"
+    }
+  },
+  "word_worm": {
+    "team_gnilleps": {
+      "game_type": "Team Gnilleps",
+      "game_info": "To win this Team Gnilleps, your team must work together to spell the word below backwards on the first try without writing it down. All players on your team will take alternating turns, adding one letter at a time to spell the word in reverse"
+    },
+    "gnilleps": {
+      "game_type": "Gnilleps",
+      "game_info": "To win this Gnilleps, choose a speller from your team who can spell the word below backwards on the first try without writing it down"
+    },
+    "zelpuz": {
+      "game_type": "Zelpuz",
+      "game_info": "To win this Zelpuz, your team must rearrange the letters below to find the answer"
+    }
+  }
+}

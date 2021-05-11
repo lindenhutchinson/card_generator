@@ -17,7 +17,7 @@
 <script>
 import { card_types } from "../api";
 export default {
-  name: "HelloWorld",
+  name: "CardTypeSelector",
   props: {
     card_type: String,
   },

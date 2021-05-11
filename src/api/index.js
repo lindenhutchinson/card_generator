@@ -1,5 +1,7 @@
-import sculptData from "../data/sculpt_cards.json";
-import songData from "../data/song_cards.json";
+import cCatData from "../data/creative_cat_cards.json";
+import songData from "../data/hum_cards.json";
+import gameData from "../data/game_data.json";
+
 import _ from "lodash";
 
 export const card_types = {
@@ -74,11 +76,11 @@ export const game_types = {
         },
     },
 }
-var game_types_data = {
+const game_types_data = {
     'creative_cat': {
-        'sculptorades': sculptData,
-        'sensosketch': '',
-        'cloodle': '',
+        'sculptorades': cCatData,
+        'sensosketch': cCatData,
+        'cloodle': cCatData,
     },
     'star_performer': {
         'humdinger': songData,
@@ -97,6 +99,13 @@ export function get_random_card(card_type, game_type) {
         game_type = _.sample(game_types[card_type]).value;
     }
     const data = game_types_data[card_type][game_type];
-
-    return data ? _.sample(data) : [];
+    const g_type = gameData[card_type][game_type]["game_type"];
+    const g_info = gameData[card_type][game_type]["game_info"];
+    if(data) {
+        const card = _.sample(data);
+        card['game_info'] = g_info;
+        card['game_type'] = g_type;
+        return card;
+    }
+    return [];
 }

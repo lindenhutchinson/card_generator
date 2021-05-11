@@ -18,7 +18,7 @@
 <script>
 import { game_types } from "../api";
 export default {
-  name: "HelloWorld",
+  name: "GameTypeSelector",
   props: {
     game_type: String,
     card_type: String,
