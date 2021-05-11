@@ -17,7 +17,6 @@ class Scraper(Common):
         }
 
     def get_soup(self):
-        print(self.url)
         page = requests.get(self.url)
         return BeautifulSoup(page.content, "lxml")
 

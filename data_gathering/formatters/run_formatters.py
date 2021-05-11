@@ -12,12 +12,16 @@ if __name__ == '__main__':
         },
         {
             'data_files': ['../data/expressions_data.json', '../data/movie_data.json'],
-            'output_file': '../formatted_data/creative_cat_cards.json',
+            'output_file': '../formatted_data/cloodle.json',
+        },
+        {
+            'data_files': ['../data/expressions_data.json'],
+            'output_file': '../formatted_data/sculptorades.json',
         },
         {
             'data_files':['../data/charades_data.json'],
             'output_file': '../formatted_data/charades_cards.json'
-        }
+        },
     ]
 
     for card_data in cards:

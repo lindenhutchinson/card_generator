@@ -1,16 +1,20 @@
 import os
 import json
 
+
 class Common:
     """For loading and writing json files.
 
 
         This class uses its current path to determine the location of the passed files. Do not use a leading / in the path.
         Always pass a relative path
+
     Args:
         input_file (string): a relative path to a json file eg: '../data.json'
+
         output_file (string): a relative path to a json file eg: '../card.json'
-    """ 
+    """
+
     def __init__(self, input_file, output_file):
         self.input_file = input_file
         self.output_file = output_file
