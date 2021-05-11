@@ -1,7 +1,8 @@
 import cCatData from "../data/creative_cat_cards.json";
 import songData from "../data/hum_cards.json";
 import gameData from "../data/game_data.json";
-
+import celebData from "../data/sideshow_cards.json";
+import charadesData from "../data/charades_cards.json";
 import _ from "lodash";
 
 export const card_types = {
@@ -60,6 +61,11 @@ export const game_types = {
             value: 'sideshow',
             colour: 'green darken-3',
         },
+        'copycat': {
+            label: 'Copycat',
+            value: 'copycat',
+            colour: 'green darken-3',
+        },
     },
     'data_head': {
         'polygraph': {
@@ -84,8 +90,9 @@ const game_types_data = {
     },
     'star_performer': {
         'humdinger': songData,
-        'cameo': '',
-        'sideshow': '',
+        'cameo': charadesData,
+        'sideshow': charadesData,
+        'copycat' : celebData
     },
     'data_head': [],
     'word_worm': [],

@@ -15,9 +15,11 @@
         </v-col>
       </v-row>
       <v-row justify="center">
+        <v-col sm="12" md="6">
         <v-btn block class="mb-5" color="primary" @click="get_card()">
           Get Random Card
         </v-btn>
+        </v-col>
       </v-row>
 
       <cranium-card v-if="card.answer" :card="card" />
