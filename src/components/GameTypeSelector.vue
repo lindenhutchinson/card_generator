@@ -1,9 +1,9 @@
 <template>
   <div>
-    <v-radio-group v-model="g_type">
+    <v-radio-group class="pl-4" v-model="g_type">
       <v-radio label="Random" color="purple darken-3" value="random"></v-radio>
-
       <v-radio
+        class="pt-1"
         v-for="game in games"
         :key="game.value"
         :label="game.label"

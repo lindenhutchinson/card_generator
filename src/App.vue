@@ -2,26 +2,26 @@
   <v-app>
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
-        <h2>Cranium Card Generator</h2>
+        <v-card-title class="font-weight-medium">Cranium Card Generator</v-card-title>
       </div>
 
       <v-spacer></v-spacer>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld />
+      <Home />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import Home from "./components/Home";
 
 export default {
   name: "App",
 
   components: {
-    HelloWorld,
+    Home,
   },
 
   data: () => ({
