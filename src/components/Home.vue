@@ -1,13 +1,13 @@
 <template>
   <div>
     <v-container>
-      <v-row justify="center">
-        <v-col sm="12" md="3">
-          <v-card-title>Card Type</v-card-title>
+      <v-row justify="center" no-gutters>
+        <v-col md="3" offset-lg="1" lg="2">
+          <h3 class="ml-3 pt-3">Card Type</h3>
           <card-type-selector :card_type.sync="card_type" />
         </v-col>
-        <v-col sm="12" md="3">
-          <v-card-title>Card Game</v-card-title>
+        <v-col md="3" lg="2">
+           <h3 class="ml-3 pt-3">Game Type</h3>
           <game-type-selector
             :card_type="card_type"
             :game_type.sync="game_type"
@@ -15,14 +15,14 @@
         </v-col>
       </v-row>
       <v-row justify="center">
-        <v-col sm="12" md="6">
-        <v-btn block class="mb-5" color="primary" @click="get_card()">
+        <v-col xs="6" md="6" lg="3">
+        <v-btn block :class="comp_type.value" :color="comp_type.colour" @click="get_card()">
           Get Random Card
         </v-btn>
         </v-col>
       </v-row>
 
-      <cranium-card v-if="card.answer" :card="card" />
+      <cranium-card justify="center" class="mt-5" v-if="card.answer" :card_type="comp_type" :card="card" />
     </v-container>
   </div>
 </template>
@@ -32,9 +32,9 @@ import CardTypeSelector from "./CardTypeSelector.vue";
 import GameTypeSelector from "./GameTypeSelector.vue";
 import CraniumCard from "./CraniumCard.vue";
 
-import { get_random_card } from "../api";
+import { get_random_card, get_type } from "../api";
 export default {
-  name: "HelloWorld",
+  name: "Home",
   components: {
     CardTypeSelector,
     GameTypeSelector,
@@ -52,8 +52,30 @@ export default {
       this.card = get_random_card(this.card_type, this.game_type);
     },
   },
-  mounted() {
-    this.get_card();
+  computed: {
+    comp_type: function() {
+      return get_type(this.card_type)
+    }
   },
 };
 </script>
+
+<style scoped>
+.star_performer {
+  background: #4caf50;
+}
+.data_head {
+  background: orangered;
+}
+.creative_cat {
+  background: #2196f3;
+}
+.word_worm {
+  background: #fbc02d;
+}
+.random {
+  background: #a438b6;
+
+  color: white;
+}
+</style>

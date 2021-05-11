@@ -1,8 +1,9 @@
 <template>
   <div>
-    <v-radio-group dense v-model="c_type" column>
+    <v-radio-group class="pl-4" v-model="c_type" column>
       <v-radio label="Random" color="purple darken-3" value="random"></v-radio>
       <v-radio
+        class="pt-1"
         v-for="type in card_types"
         :key="type.value"
         :label="type.label"
