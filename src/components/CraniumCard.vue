@@ -4,7 +4,6 @@
     v-if="card"
     class="mx-auto card pb-2"
     :class="card.card_type.value"
-    max-width="400"
     max-height="400"
     outlined
     raised

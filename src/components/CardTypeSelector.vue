@@ -16,7 +16,7 @@
 
 
 <script>
-import { card_types } from "../api";
+import { get_card_types } from "../api";
 export default {
   name: "CardTypeSelector",
   props: {
@@ -25,13 +25,16 @@ export default {
   data() {
     return {
       c_type: "random",
-      card_types: card_types,
+      card_types: [],
     };
   },
   watch: {
     c_type() {
       this.$emit("update:card_type", this.c_type);
     },
+  },
+  mounted() {
+    this.card_types = get_card_types();
   },
 };
 </script>

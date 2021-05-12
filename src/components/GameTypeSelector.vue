@@ -7,7 +7,7 @@
         v-for="game in games"
         :key="game.value"
         :label="game.label"
-        :color="game.colour"
+        :color="game_color"
         :value="game.value"
       ></v-radio>
     </v-radio-group>
@@ -16,7 +16,7 @@
 
 
 <script>
-import { game_types } from "../api";
+import { get_game_types, get_card_types } from "../api";
 export default {
   name: "GameTypeSelector",
   props: {
@@ -25,13 +25,17 @@ export default {
   },
   data() {
     return {
-      game_types: game_types,
+      game_types: [],
+      card_types: [],
       g_type: "random",
     };
   },
   computed: {
     games: function () {
       return this.game_types[this.card_type];
+    },
+    game_color: function () {
+      return this.card_types[this.card_type].colour;
     },
   },
   watch: {
@@ -41,6 +45,10 @@ export default {
     g_type() {
       this.$emit("update:game_type", this.g_type);
     },
+  },
+  mounted() {
+    this.game_types = get_game_types();
+    this.card_types = get_card_types();
   },
 };
 </script>
