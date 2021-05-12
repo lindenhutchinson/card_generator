@@ -18,7 +18,7 @@ class CelebrityScraper(Scraper):
         for h3 in h3_list:
             a = h3.find("a")
             text = a.get_text().replace("\n", "").strip()
-            self.data['answers'].append(text)
+            self.data['answers'].append([text])
 
     def run(self):
         self.data['game_text'] = "Hint: Actor"

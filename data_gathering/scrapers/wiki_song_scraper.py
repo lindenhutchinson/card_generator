@@ -50,7 +50,7 @@ class WikiSongScraper(Scraper):
                 if song == prev_song:
                     continue
                 prev_song = song
-                single = f"{song} - {artist}"
+                single = [f"{song} - {artist}"]
 
                 self.data['answers'].append(single)
 

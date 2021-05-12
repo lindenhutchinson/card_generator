@@ -18,7 +18,7 @@
           <v-card-subtitle>
             <b>{{ card.game_text }}</b>
           </v-card-subtitle>
-          <v-card-text>{{ card.game_info }}</v-card-text>
+          <v-card-text class="pb-10">{{ card.game_info }}</v-card-text>
 
           <v-btn block @click="show_answer = true">Show Answer</v-btn>
           <v-expand-transition>
@@ -28,11 +28,14 @@
               class="card-text v-card--reveal"
               v-if="show_answer"
             >
-              <v-card-text>
-                {{ card.answer }}
-              </v-card-text>
-
-              <v-btn text block @click="show_answer = false"> Close </v-btn>
+              <div class="answer-text pt-15">
+                <p v-for="a in card.answer" v-bind:key="a[0]">
+                  {{ a }}
+                </p>
+              </div>
+              <div class="button">
+                <v-btn text block @click="show_answer = false"> Close </v-btn>
+              </div>
             </v-card>
           </v-expand-transition>
         </v-card>
@@ -88,14 +91,23 @@ export default {
 .card-text {
   background: white;
 }
+.answer-text {
+  text-align: center;
+  vertical-align: middle;
+}
 .card {
   overflow: hidden;
 }
-
+.button {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
 .v-card--reveal {
   bottom: 0;
   opacity: 1 !important;
   position: absolute;
   width: 100%;
+  height: 100%;
 }
 </style>

@@ -13,6 +13,7 @@ class Formatter(Common):
         self.game_text = ''
         self.answers = ''
 
+
     def get_cards(self):
         cards = []
         for fn in self.input_files:

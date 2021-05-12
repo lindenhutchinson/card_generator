@@ -17,7 +17,7 @@ class MovieScraper(Scraper):
 
         for h3 in h3_list:
             a = h3.find("a")
-            self.data['answers'].append(a.get_text())
+            self.data['answers'].append([a.get_text()])
 
     def run(self):
         self.data['game_text'] = "Hint: Movie"

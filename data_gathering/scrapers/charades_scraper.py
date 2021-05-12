@@ -28,7 +28,7 @@ class CharadesScraper(Scraper):
                     for li in li_list:
                         matches = re.findall(r'<li>([-\w\s]+)<\/li>', str(li))
                         if len(matches) == 1:
-                            charade_ideas.append(matches[0])
+                            charade_ideas.append([matches[0]])
                             found_sib = True
                 if found_sib:
                     break

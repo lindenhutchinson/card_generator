@@ -22,7 +22,7 @@ class SingalongSongScraper(Scraper):
             matches = re.findall(pattern, text)
             if len(matches) == 1:
                 self.data['answers'].append(
-                    f"{matches[0][0]} - {matches[0][1]}")
+                    [f"{matches[0][0]} - {matches[0][1]}"])
 
         self.write_to_json(self.data)
 

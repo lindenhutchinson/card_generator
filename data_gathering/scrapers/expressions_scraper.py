@@ -18,7 +18,7 @@ class ExpScraper(Scraper):
             expr_match = re.findall(r'\d{1,3}\.(.+)', text)
             if len(expr_match) == 1:
                 expr_text = expr_match[0].strip().lower().capitalize()
-                self.data['answers'].append(expr_text)
+                self.data['answers'].append([expr_text])
 
         self.data['game_text'] = 'Hint: Expression'
         self.write_to_json(self.data)

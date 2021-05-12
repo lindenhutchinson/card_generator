@@ -1,8 +1,10 @@
-import cCatData from "../data/creative_cat_cards.json";
+import cloodleData from "../data/cloodle.json";
 import songData from "../data/hum_cards.json";
 import gameData from "../data/game_data.json";
 import celebData from "../data/sideshow_cards.json";
 import charadesData from "../data/charades_cards.json";
+import spellingData from "../data/spelling_cards.json";
+
 import _ from "lodash";
 
 export const card_types = {
@@ -95,9 +97,9 @@ export const game_types = {
 }
 const game_types_data = {
     'creative_cat': {
-        'sculptorades': cCatData,
-        'sensosketch': cCatData,
-        'cloodle': cCatData,
+        'sculptorades': cloodleData,
+        'sensosketch': cloodleData,
+        'cloodle': cloodleData,
     },
     'star_performer': {
         'humdinger': songData,
@@ -112,8 +114,8 @@ const game_types_data = {
         'polygraph': [],
     },
     'word_worm': {
-        'team_gnilleps': [],
-        'gnilleps': [],
+        'team_gnilleps': spellingData,
+        'gnilleps': spellingData,
         'zelpuz': [],
     }
 }

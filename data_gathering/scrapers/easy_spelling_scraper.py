@@ -1,14 +1,9 @@
-import requests
-from bs4 import BeautifulSoup
-import os
-
-parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-os.sys.path.insert(0, parentdir)
-from utils.common import Common
-
+from scraper import Scraper
+import re
 import numpy as np
 
-class Scraper(Common):
+
+class EasySpellingScraper(Scraper):
     def __init__(self, url, output_file):
         self.url = url
         self.output_file = output_file
@@ -16,14 +11,6 @@ class Scraper(Common):
             'game_text': '',
             'answers': []
         }
-
-    def get_soup(self, url=''):
-        if url:
-            page = requests.get(url)
-        else:
-            page = requests.get(self.url)
-            
-        return BeautifulSoup(page.content, "lxml")
 
     def get_data_from_sibling(self, soup, sibling_tag, desired_tag):
         """Uses a sibling_tag (such as a h3) and finds data in its siblings using the desired_tag (such as table)
@@ -44,7 +31,18 @@ class Scraper(Common):
                 if hasattr(sib, 'contents'):
                     ele_list = sib.find_all(desired_tag)
                     if len(ele_list):
-                        data = np.concatenate((data, [ele.get_text()
-                                                      for ele in ele_list])).tolist()
+                        data = np.concatenate((data, [ele.get_text() for ele in ele_list if len(ele.get_text().split(' ')) == 1 and len(ele.get_text()) > 5])).tolist()
 
         return data
+
+    def run(self):
+        soup = self.get_soup()
+        data = self.get_data_from_sibling(soup, "h2", "a")
+        self.data['answers'] = [[d] for d in data]
+        self.write_to_json(self.data)
+
+
+if __name__ == "__main__":
+    url = "https://grammar.yourdictionary.com/spelling-and-word-lists/misspelled.html"
+    scraper = EasySpellingScraper(url, '../data/easy_speling_data.json')
+    scraper.run()
