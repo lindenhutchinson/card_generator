@@ -31,7 +31,7 @@
           <cranium-card
             justify="center"
             class="mb-10"
-            v-if="card.answer"
+            v-if="card"
             :card_type="comp_type"
             :card="card"
           />

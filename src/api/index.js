@@ -108,15 +108,15 @@ const game_types_data = {
         'copycat': celebData
     },
     'data_head': {
-        'odd_couple': [],
-        'selectaquest': [],
-        'factoid': [],
-        'polygraph': [],
+        'odd_couple': songData,
+        'selectaquest': songData,
+        'factoid': songData,
+        'polygraph': songData,
     },
     'word_worm': {
         'team_gnilleps': spellingData,
         'gnilleps': spellingData,
-        'zelpuz': [],
+        'zelpuz': spellingData,
     }
 }
 function get_sorted_obj(obj) {
