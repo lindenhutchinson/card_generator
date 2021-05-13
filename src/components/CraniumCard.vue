@@ -32,7 +32,7 @@
           <v-card-text class="pb-10">{{ card.game_info }}</v-card-text>
           <v-expand-transition>
             <v-card
-              raised
+              flat
               justify="center"
               class="card-text v-card--reveal"
               v-if="show_answer"
