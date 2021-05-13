@@ -15,9 +15,16 @@
         }}</v-card-title>
 
         <v-card flat class="card-text pt-2">
-          <v-card-subtitle>
-            <b>{{ card.game_text }}</b>
-          </v-card-subtitle>
+          <div v-if="typeof card.game_text === 'string'">
+            <v-card-subtitle>
+              <b>{{ card.game_text }}</b>
+            </v-card-subtitle>
+          </div>
+          <div v-else>
+            <v-card-subtitle v-for="txt in card.game_text" v-bind:key="txt">
+              <b>{{ txt }}</b>
+            </v-card-subtitle>
+          </div>
           <v-card-text class="pb-10">{{ card.game_info }}</v-card-text>
 
           <v-btn block @click="show_answer = true">Show Answer</v-btn>
@@ -28,8 +35,16 @@
               class="card-text v-card--reveal"
               v-if="show_answer"
             >
-              <div class="answer-text pt-15">
-                <p v-for="a in card.answer" v-bind:key="a[0]">
+              <div
+                v-if="typeof card.answer === 'string'"
+                class="answer-text pt-15"
+              >
+                <p>
+                  {{ card.answer }}
+                </p>
+              </div>
+              <div v-else class="answer-text pt-15">
+                <p v-for="a in card.answer" v-bind:key="a">
                   {{ a }}
                 </p>
               </div>

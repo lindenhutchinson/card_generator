@@ -28,13 +28,13 @@
     },
     "factoid": {
       "game_type": "Factoid",
-      "game_info": "To win this Factoid, your team must correctly answer the question below"
+      "game_info": "To win this Factoid, your team must correctly answer the question "
     }
   },
   "star_performer": {
     "copycat": {
       "game_type": "Copycat",
-      "game_info": "To win this Copycat, choose a performer from your team who can get you to guess the answer by acting like the famous person or character. The performer can talk like the person but cannot say names or people or places"
+      "game_info": "To win this Copycat, choose a performer from your team who can get you to guess the answer by acting like the famous person or character. The performer can talk like the person but cannot say names of people or places"
     },
     "humdinger": {
       "game_type": "Humdinger",
@@ -60,7 +60,7 @@
     },
     "zelpuz": {
       "game_type": "Zelpuz",
-      "game_info": "To win this Zelpuz, your team must rearrange the letters below to find the answer"
+      "game_info": "To win this Zelpuz, your team must rearrange the letters above to find the answer"
     }
   }
 }

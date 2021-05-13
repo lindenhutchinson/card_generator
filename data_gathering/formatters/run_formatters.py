@@ -4,30 +4,42 @@ if __name__ == '__main__':
     format_dir = "../../src/data/"
     data_dir = "../data/"
     cards = [
+        # CREATIVE CAT
         {
-            'data_files': [data_dir + 'song_data.json', data_dir + 'singalong_song.json'],
-            'output_file': format_dir + 'hum_cards.json',
-        },
-        {
-            'data_files': [data_dir + 'celebrity_data.json'],
-            'output_file': format_dir + 'sideshow_cards.json'
-        },
-        {
-            'data_files': [data_dir + 'expressions_data.json', data_dir + 'movie_data.json'],
+            'data_files': [data_dir + 'expressions_data.json'],
             'output_file': format_dir + 'cloodle.json',
+        },
+        {
+            'data_files': [data_dir + 'expressions_data.json'],
+            'output_file': format_dir + 'sensosketch.json',
         },
         {
             'data_files': [data_dir + 'expressions_data.json'],
             'output_file': format_dir + 'sculptorades.json',
         },
+        # STAR PERFORMER
         {
-            'data_files':[data_dir + 'charades_data.json'],
-            'output_file': format_dir + 'charades_cards.json'
+            'data_files': [data_dir + 'song_data.json', data_dir + 'singalong_song.json'],
+            'output_file': format_dir + 'humdinger.json',
         },
         {
-            'data_files':[data_dir + 'spelling_data.json'],
-            'output_file': format_dir + 'spelling_cards.json'
+            'data_files': [data_dir + 'celebrity_data.json'],
+            'output_file': format_dir + 'copy_cat.json'
         },
+        {
+            'data_files': [data_dir + 'charades_data.json'],
+            'output_file': format_dir + 'cameo.json'
+        },
+        {
+            'data_files': [data_dir + 'celebrity_data.json'],
+            'output_file': format_dir + 'sideshow.json'
+        },
+        # WORD WORM
+        {
+            'data_files': [data_dir + 'spelling_data.json'],
+            'output_file': format_dir + 'gnilleps.json'
+        },
+        # DATA HEAD
     ]
 
     for card_data in cards:
