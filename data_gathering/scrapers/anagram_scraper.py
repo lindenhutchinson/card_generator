@@ -4,13 +4,8 @@ import numpy as np
 
 
 class AnagramScraper(Scraper):
-    def __init__(self, url, output_file, url_list=[]):
-        self.url = url
+    def __init__(self, output_file, url_list=[]):
         self.output_file = output_file
-        self.data = {
-            'game_text': '',
-            'answers': []
-        }
         self.url_list = url_list
 
     def get_data_from_siblings(self, soup, first_sibling, second_sibling, desired_tag):
@@ -60,6 +55,5 @@ if __name__ == "__main__":
             'http://www.english-for-students.com/Anagrams-of-Food-and-Drinks.html',
             'http://www.english-for-students.com/Anagrams-Politics.html']
 
-    scraper = AnagramScraper(
-        'url', '../../src/data/zelpuz.json', urls)
+    scraper = AnagramScraper('../../src/data/zelpuz.json', urls)
     scraper.run()

@@ -38,6 +38,7 @@ function get_game_types_data(card_type, game_type) {
     return game_types_data[card_type][game_type];
 }
 function get_game_data(card_type, game_type) {
+    
     return gameData[card_type][game_type]
 }
 export function get_random_card(card_type, game_type) {

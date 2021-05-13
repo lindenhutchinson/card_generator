@@ -7,6 +7,8 @@ import cameoData from "../data/cameo.json";
 import copycatData from "../data/copy_cat.json";
 import spellingData from "../data/gnilleps.json";
 import zelpuzData from "../data/zelpuz.json";
+import selectaquestData from "../data/selectaquest.json";
+import polygraphData from "../data/polygraph.json"
 
 export const game_types_data = {
     'creative_cat': {
@@ -21,10 +23,10 @@ export const game_types_data = {
         'copycat': copycatData
     },
     'data_head': {
-        'odd_couple': humdingerData,
-        'selectaquest': humdingerData,
-        'factoid': humdingerData,
-        'polygraph': humdingerData,
+        'odd_couple': selectaquestData,
+        'selectaquest': selectaquestData,
+        'factoid': polygraphData,
+        'polygraph': polygraphData,
     },
     'word_worm': {
         'team_gnilleps': spellingData,

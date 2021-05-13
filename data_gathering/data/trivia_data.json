@@ -1,0 +1,378 @@
+[
+  {
+    "answers": ["True"],
+    "game_text": [
+      "In the 1988 film \"Akira\", Tetsuo ends up destroying Tokyo.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "The name of the main character of the video game \"The Legend of Zelda\", is Zelda.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": ["Greenland is almost as big as Africa.", "True", "False"]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "The Tiananmen Square protests of 1989 were held in Hong Kong.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "The cover of The Beatles album \"Abbey Road\" featured a Volkswagen Beetle in the background.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "The surface area of Russia is slightly larger than that of the dwarf planet Pluto.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "In World War II, Hawker Typhoons served in the Pacific theater.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "The Kingdom of Prussia briefly held land in Estonia.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "The proof for the Chinese Remainder Theorem used in Number Theory was NOT developed by its first publisher, Sun Tzu.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "There is a city called Rome in every continent on Earth.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "A universal set, or a set that contains all sets, exists.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "111,111,111 x 111,111,111 = 12,345,678,987,654,321",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": ["There are 86400 seconds in a day.", "False", "True"]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "In 2016, the United Kingdom voted to stay in the EU.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "The Chevrolet Corvette has always been made exclusively with V8 engines only.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "The communication protocol NFC stands for Near-Field Control.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "The average woman is 5 inches / 13 centimeters shorter than the average man.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "Russia passed a law in 2013 which outlaws telling children that homosexuals exist.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "Theodore Roosevelt Jr. was the only General involved in the initial assault on D-Day.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": ["There exists an island named \"Java\".", "True", "False"]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "In Alfred Hitchcock's film 'Psycho' it is said he used chocolate syrup to simulate the blood in the famous shower scene from ",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "You could walk from Norway to North Korea while only passing through Russia.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "In Pok\u00e9mon, Ash's Pikachu refuses to go into a pokeball.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "In the original Star Wars trilogy, Alec Guinness provided the voice for Darth Vader.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "In the \"Toaru Kagaku no Railgun\" anime,  espers can only reach a maximum of level 6 in their abilities.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "The name of the attack \"Kamehameha\" in Dragon Ball Z was named after a famous king of Hawaii.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "The names of Roxas's Keyblades in Kingdom Hearts are \"Oathkeeper\" and \"Oblivion\".",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "The NVidia GTX 1080 gets its name because it can only render at a 1920x1080 screen resolution.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": ["Liechtenstein does not have an airport.", "True", "False"]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "Albert Einstein had trouble with mathematics when he was in school.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": ["Bob Ross was a US Air Force pilot.", "False", "True"]
+  },
+  {
+    "answers": ["True"],
+    "game_text": ["Tokyo is the capital of Japan.", "True", "False"]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "Android versions are named in alphabetical order.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "In \"Star Trek\", Klingons are commonly referred to as \"Black Elves\".",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "\"Rich Uncle Pennybags\" from the board game \"Monopoly\" wears a monocle.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "Helen Clark was the 37th Prime Minister of Australia.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "In \"Call Of Duty: World At War\", the first appearance of the \"PPSH-41\" in \"Zombies\" was in the map \"Der Riese\".",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "The Fiat Multipla is a drivable car in \"Forza Horizon 3\".",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "In \"League of Legends\", there exists four different types of Dragon.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "\"Return to Castle Wolfenstein\" was the only game of the Wolfenstein series where you don't play as William \"B.J.\" Blazkowicz.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "Water always boils at 100\u00b0C, 212\u00b0F, 373.15K, no matter where you are.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "Rhode Island is actually located on the US mainland, despite its name.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "The singer Billie Holiday was also known as \"Lady Day\".",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "The Korean War ended in 1953 without any ceasefire.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "Vietnam's national flag is a red star in front of a yellow background.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "In \"Avatar: The Last Airbender\" and \"The Legend of Korra\", Lavabending is a specialized bending technique of Firebending.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "A Boolean value of \"0\" represents which of these words?",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["False"],
+    "game_text": [
+      "Franz Joseph I was the last emperor of Austria.",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "The protagonist in \"Humanity Has Declined\" has no discernable name and is simply referred to as 'I' for most of the series.",
+      "False",
+      "True"
+    ]
+  },
+  {
+    "answers": ["True"],
+    "game_text": [
+      "The protagonist's names in 'Who's Afraid of Virginia Woolf', George and Martha, were derived from George Washington and his wife.",
+      "False",
+      "True"
+    ]
+  }
+]

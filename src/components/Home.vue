@@ -17,9 +17,28 @@
       <v-row justify="center">
         <v-col xs="4" sm="6" md="6" lg="4">
           <v-btn
+            v-if="comp_card_type.value !== 'random' && comp_game === 'random'"
             block
-            :class="comp_type.value"
-            :color="comp_type.colour"
+            :class="comp_card_type.value"
+            :color="comp_card_type.colour"
+            @click="get_card()"
+          >
+            Get Random {{comp_card_type.label}}
+          </v-btn>
+          <v-btn
+            v-else-if="comp_game !== 'random'"
+            block
+            :class="comp_card_type.value"
+            :color="comp_card_type.colour"
+            @click="get_card()"
+          >
+            Get Random {{comp_game}}
+          </v-btn>
+          <v-btn
+            v-else
+            block
+            :class="comp_card_type.value"
+            :color="comp_card_type.colour"
             @click="get_card()"
           >
             Get Random Card
@@ -32,7 +51,7 @@
             justify="center"
             class="mb-10"
             v-if="card"
-            :card_type="comp_type"
+            :card_type="comp_card_type"
             :card="card"
           />
         </v-col>
@@ -67,9 +86,14 @@ export default {
     },
   },
   computed: {
-    comp_type: function () {
+    comp_card_type: function () {
       return get_type(this.card_type);
     },
+    comp_game: function () {
+      return this.game_type.replace('_', ' ');
+    },
+
+    
   },
 };
 </script>

@@ -8,6 +8,7 @@
 }
 .creative_cat {
     background: $creative_cat;
+    color: rgba(255, 255, 255, 0.904);
 }
 .word_worm {
     background: $word_worm;
@@ -24,6 +25,7 @@
 .answer-text {
     text-align: center;
     vertical-align: middle;
+    margin-right:1.5rem;
 }
 .card {
     overflow: hidden;

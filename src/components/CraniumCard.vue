@@ -4,7 +4,6 @@
     v-if="card.card_type"
     class="mx-auto card pb-2"
     :class="card.card_type.value"
-    max-height="400"
     outlined
     raised
   >
@@ -21,13 +20,16 @@
             </v-card-subtitle>
           </div>
           <div v-else>
-            <v-card-subtitle v-for="txt in card.game_text" v-bind:key="txt">
-              <b>{{ txt }}</b>
+            <div>
+              <v-card-subtitle>
+                <b>{{ card.game_text[0] }}</b>
+              </v-card-subtitle>
+            </div>
+            <v-card-subtitle class="pb-0 pt-0" v-for="txt in card.game_text.slice(1)" v-bind:key="txt">
+              {{ txt }}
             </v-card-subtitle>
           </div>
           <v-card-text class="pb-10">{{ card.game_info }}</v-card-text>
-
-          <v-btn block @click="show_answer = true">Show Answer</v-btn>
           <v-expand-transition>
             <v-card
               raised
@@ -39,20 +41,17 @@
                 v-if="typeof card.answer === 'string'"
                 class="answer-text pt-15"
               >
-                <p>
-                  {{ card.answer }}
-                </p>
+                <p>{{ card.answer }}</p>
               </div>
               <div v-else class="answer-text pt-15">
-                <p v-for="a in card.answer" v-bind:key="a">
-                  {{ a }}
-                </p>
+                <p v-for="a in card.answer" v-bind:key="a">{{ a }}</p>
               </div>
-              <div class="button">
-                <v-btn text block @click="show_answer = false"> Close </v-btn>
-              </div>
+              
             </v-card>
           </v-expand-transition>
+          <v-btn color="grey lighten-3" block v-if="!show_answer" @click="show_answer = true">Show Answer</v-btn>
+          <v-btn color="grey lighten-3" v-else block @click="show_answer = false">Close</v-btn>
+              
         </v-card>
       </v-list-item-content>
     </v-list-item>

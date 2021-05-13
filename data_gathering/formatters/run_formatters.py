@@ -40,6 +40,14 @@ if __name__ == '__main__':
             'output_file': format_dir + 'gnilleps.json'
         },
         # DATA HEAD
+        {
+            'data_files': [data_dir + 'mc_trivia_data.json'],
+            'output_file': format_dir + 'selectaquest.json'
+        },
+        {
+            'data_files': [data_dir + 'bool_trivia_data.json'],
+            'output_file': format_dir + 'polygraph.json'
+        },
     ]
 
     for card_data in cards:
