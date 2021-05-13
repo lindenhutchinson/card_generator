@@ -1,7 +1,7 @@
 <template>
   <v-card
     style="margin: 0 auto"
-    v-if="card"
+    v-if="card.card_type"
     class="mx-auto card pb-2"
     :class="card.card_type.value"
     max-height="400"
@@ -70,44 +70,6 @@ export default {
   },
 };
 </script>
-<style scoped>
-.star_performer {
-  background: #4caf50;
-}
-.data_head {
-  background: orangered;
-}
-.creative_cat {
-  background: #2196f3;
-}
-.word_worm {
-  background: #fbc02d;
-}
-.random {
-  background: #a438b6;
-
-  color: white;
-}
-.card-text {
-  background: white;
-}
-.answer-text {
-  text-align: center;
-  vertical-align: middle;
-}
-.card {
-  overflow: hidden;
-}
-.button {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-}
-.v-card--reveal {
-  bottom: 0;
-  opacity: 1 !important;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
+<style scoped lang="scss">
+@import "../styles/index.scss";
 </style>

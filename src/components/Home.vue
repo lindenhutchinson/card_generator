@@ -74,22 +74,7 @@ export default {
 };
 </script>
 
-<style scoped>
-.star_performer {
-  background: #4caf50;
-}
-.data_head {
-  background: orangered;
-}
-.creative_cat {
-  background: #2196f3;
-}
-.word_worm {
-  background: #fbc02d;
-}
-.random {
-  background: #a438b6;
+<style scoped lang="scss">
+@import "../styles/index.scss";
 
-  color: white;
-}
 </style>

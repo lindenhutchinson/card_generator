@@ -2,7 +2,9 @@
   <v-app>
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
-        <v-card-title class="font-weight-medium">Cranium Card Generator</v-card-title>
+        <v-card-title class="font-weight-medium"
+          >Cranium Card Generator</v-card-title
+        >
       </div>
 
       <v-spacer></v-spacer>
@@ -29,3 +31,4 @@ export default {
   }),
 };
 </script>
+
