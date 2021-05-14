@@ -7,46 +7,46 @@ if __name__ == '__main__':
         # CREATIVE CAT
         {
             'data_files': [data_dir + 'expressions_data.json'],
-            'output_file': format_dir + 'cloodle.json',
+            'output_file': format_dir + 'draw.json',
         },
         {
             'data_files': [data_dir + 'expressions_data.json'],
-            'output_file': format_dir + 'sensosketch.json',
+            'output_file': format_dir + 'draw_blind.json',
         },
         {
             'data_files': [data_dir + 'expressions_data.json'],
-            'output_file': format_dir + 'sculptorades.json',
+            'output_file': format_dir + 'sculpt.json',
         },
         # STAR PERFORMER
         {
             'data_files': [data_dir + 'song_data.json', data_dir + 'singalong_song.json'],
-            'output_file': format_dir + 'humdinger.json',
+            'output_file': format_dir + 'bum_flinger.json',
         },
         {
             'data_files': [data_dir + 'celebrity_data.json'],
-            'output_file': format_dir + 'copy_cat.json'
+            'output_file': format_dir + 'copier.json'
         },
         {
             'data_files': [data_dir + 'charades_data.json'],
-            'output_file': format_dir + 'cameo.json'
+            'output_file': format_dir + 'charades.json'
         },
         {
             'data_files': [data_dir + 'celebrity_data.json'],
-            'output_file': format_dir + 'sideshow.json'
+            'output_file': format_dir + 'puppet.json'
         },
         # WORD WORM
         {
             'data_files': [data_dir + 'spelling_data.json'],
-            'output_file': format_dir + 'gnilleps.json'
+            'output_file': format_dir + 'spelling.json'
         },
         # DATA HEAD
         {
             'data_files': [data_dir + 'mc_trivia_data.json'],
-            'output_file': format_dir + 'selectaquest.json'
+            'output_file': format_dir + 'selecting_quest.json'
         },
         {
             'data_files': [data_dir + 'bool_trivia_data.json'],
-            'output_file': format_dir + 'polygraph.json'
+            'output_file': format_dir + 'poly_g.json'
         },
     ]
 

@@ -62,7 +62,7 @@
 
 <script>
 export default {
-  name: "CraniumCard",
+  name: "ActivityCard",
   props: {
     card: {
       game_text: String,

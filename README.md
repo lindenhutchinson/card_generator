@@ -1,2 +1,2 @@
-# cranium_frontend
-The frontend for a cranium card generator app
+# card_generator
+An activity card generating app made using Vuetify

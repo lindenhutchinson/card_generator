@@ -55,5 +55,5 @@ if __name__ == "__main__":
             'http://www.english-for-students.com/Anagrams-of-Food-and-Drinks.html',
             'http://www.english-for-students.com/Anagrams-Politics.html']
 
-    scraper = AnagramScraper('../../src/data/zelpuz.json', urls)
+    scraper = AnagramScraper('../../src/data/anagram.json', urls)
     scraper.run()

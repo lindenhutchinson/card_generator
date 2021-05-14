@@ -47,7 +47,7 @@
       </v-row>
       <v-row justify="center">
         <v-col xs="4" sm="6" md="6" lg="4">
-          <cranium-card
+          <activity-card
             justify="center"
             class="mb-10"
             v-if="card"
@@ -63,7 +63,7 @@
 <script>
 import CardTypeSelector from "./CardTypeSelector.vue";
 import GameTypeSelector from "./GameTypeSelector.vue";
-import CraniumCard from "./CraniumCard.vue";
+import ActivityCard from "./ActivityCard.vue";
 
 import { get_random_card, get_type } from "../api";
 export default {
@@ -71,7 +71,7 @@ export default {
   components: {
     CardTypeSelector,
     GameTypeSelector,
-    CraniumCard,
+    ActivityCard,
   },
   data() {
     return {

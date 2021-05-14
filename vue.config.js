@@ -7,6 +7,6 @@ module.exports = {
     port: 3000
   },
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/cranium_frontend/'
+    ? '/card_generator/'
     : '/',
 }

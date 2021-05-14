@@ -1,125 +1,125 @@
-import cloodleData from "../data/cloodle.json";
-import sculptoradesData from "../data/sculptorades.json";
-import sensosketchData from "../data/sensosketch.json";
-import humdingerData from "../data/humdinger.json";
-import sideshowData from "../data/sideshow.json";
-import cameoData from "../data/cameo.json";
-import copycatData from "../data/copy_cat.json";
-import spellingData from "../data/gnilleps.json";
-import zelpuzData from "../data/zelpuz.json";
-import selectaquestData from "../data/selectaquest.json";
-import polygraphData from "../data/polygraph.json"
+import drawData from "../data/draw.json";
+import sculptData from "../data/sculpt.json";
+import draw_blindData from "../data/draw_blind.json";
+import bum_flingerData from "../data/bum_flinger.json";
+import puppetData from "../data/puppet.json";
+import charadesData from "../data/charades.json";
+import copierData from "../data/copier.json";
+import spellingData from "../data/spelling.json";
+import anagramData from "../data/anagram.json";
+import selecting_questData from "../data/selecting_quest.json";
+import poly_gData from "../data/poly_g.json"
 
 export const game_types_data = {
-    'creative_cat': {
-        'sculptorades': sculptoradesData,
-        'sensosketch': sensosketchData,
-        'cloodle': cloodleData,
+    'creative': {
+        'sculpt': sculptData,
+        'draw_blind': draw_blindData,
+        'draw': drawData,
     },
-    'star_performer': {
-        'humdinger': humdingerData,
-        'cameo': cameoData,
-        'sideshow': sideshowData,
-        'copycat': copycatData
+    'performer': {
+        'bum_flinger': bum_flingerData,
+        'charades': charadesData,
+        'puppet': puppetData,
+        'copier': copierData
     },
-    'data_head': {
-        'odd_couple': selectaquestData,
-        'selectaquest': selectaquestData,
-        'factoid': polygraphData,
-        'polygraph': polygraphData,
+    'trivia': {
+        'odd_bunch': selecting_questData,
+        'selecting_quest': selecting_questData,
+        'fact_me': poly_gData,
+        'poly_g': poly_gData,
     },
-    'word_worm': {
-        'team_gnilleps': spellingData,
-        'gnilleps': spellingData,
-        'zelpuz': zelpuzData,
+    'words': {
+        'team_spelling': spellingData,
+        'spelling': spellingData,
+        'anagram': anagramData,
     }
 }
 
 export const card_types = {
-    creative_cat: {
-        label: 'Creative Cat',
-        value: 'creative_cat',
+    creative: {
+        label: 'Creative',
+        value: 'creative',
         colour: 'blue',
     },
-    word_worm: {
-        label: 'Word Worm',
-        value: 'word_worm',
+    words: {
+        label: 'Words',
+        value: 'words',
         colour: 'yellow darken-2',
     },
-    star_performer: {
-        label: 'Star Performer',
-        value: 'star_performer',
+    performer: {
+        label: 'Performer',
+        value: 'performer',
         colour: 'green',
     },
-    data_head: {
-        label: 'Data Head',
-        value: 'data_head',
+    trivia: {
+        label: 'Trivia',
+        value: 'trivia',
         colour: 'red',
     },
 }
 export const game_types = {
-    'creative_cat': {
-        'sculptorades': {
-            label: 'Sculptorades',
-            value: 'sculptorades',
+    'creative': {
+        'sculpt': {
+            label: 'Sculpt',
+            value: 'sculpt',
         },
-        'sensosketch': {
-            label: 'Sensosketch',
-            value: 'sensosketch',
+        'draw_blind': {
+            label: 'Draw Blind',
+            value: 'draw_blind',
         },
-        'cloodle': {
-            label: 'Cloodle',
-            value: 'cloodle',
-        },
-    },
-    'star_performer': {
-        'humdinger': {
-            label: 'Humdinger',
-            value: 'humdinger',
-        },
-        'cameo': {
-            label: 'Cameo',
-            value: 'cameo',
-        },
-        'sideshow': {
-            label: 'Sideshow',
-            value: 'sideshow',
-        },
-        'copycat': {
-            label: 'Copycat',
-            value: 'copycat',
+        'draw': {
+            label: 'Draw',
+            value: 'draw',
         },
     },
-    'data_head': {
-        'polygraph': {
-            label: 'Polygraph',
-            value: 'polygraph',
+    'performer': {
+        'bum_flinger': {
+            label: 'Bum Flinger',
+            value: 'bum_flinger',
         },
-        'odd_couple': {
-            label: 'Odd Couple',
-            value: 'odd_couple',
+        'charades': {
+            label: 'Charades',
+            value: 'charades',
         },
-        'factoid': {
-            label: 'Factoid',
-            value: 'factoid',
+        'puppet': {
+            label: 'Puppet',
+            value: 'puppet',
         },
-        'selectaquest': {
-            label: 'Selectaquest',
-            value: 'selectaquest',
+        'copier': {
+            label: 'Copier',
+            value: 'copier',
         },
     },
-    'word_worm': {
-        'zelpuz': {
-            label: 'Zelpuz',
-            value: 'zelpuz',
+    'trivia': {
+        'poly_g': {
+            label: 'Poly G',
+            value: 'poly_g',
         },
-        'team_gnilleps': {
-            label: 'Team Gnilleps',
-            value: 'team_gnilleps',
+        'odd_bunch': {
+            label: 'Odd Bunch',
+            value: 'odd_bunch',
         },
-        'gnilleps': {
-            label: 'Gnilleps',
-            value: 'gnilleps',
+        'fact_me': {
+            label: 'Fact Me',
+            value: 'fact_me',
+        },
+        'selecting_quest': {
+            label: 'Selecting Quest',
+            value: 'selecting_quest',
+        },
+    },
+    'words': {
+        'anagram': {
+            label: 'Anagram',
+            value: 'anagram',
+        },
+        'team_spelling': {
+            label: 'Team Spelling',
+            value: 'team_spelling',
+        },
+        'spelling': {
+            label: 'Spelling',
+            value: 'spelling',
         },
     },
 }

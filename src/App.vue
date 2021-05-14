@@ -1,10 +1,12 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
+      <div class="align-center">
+        <v-spacer></v-spacer>
         <v-card-title class="font-weight-medium"
-          >Cranium Card Generator</v-card-title
+          >Random Card Generator</v-card-title
         >
+        <v-spacer></v-spacer>
       </div>
 
       <v-spacer></v-spacer>

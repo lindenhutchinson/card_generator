@@ -1,66 +1,66 @@
 {
-  "creative_cat": {
-    "sculptorades": {
-      "game_type": "Sculptorades",
-      "game_info": "To win this Sculptorades, choose an artist from your team who can get you to guess the answer by sculpting the subject out of putty"
+  "creative": {
+    "sculpt": {
+      "game_type": "Sculpt",
+      "game_info": "To win this Sculpt, choose an artist from your team who can get you to guess the answer by sculpting the subject out of putty"
     },
-    "sensosketch": {
-      "game_type": "Sensosketch",
-      "game_info": "To win this Sensosketch, choose an artist who can get you to guess the answer by drawing clues on paper with no talking, letters or symbols. The artist's eyes must stay closed"
+    "draw_blind": {
+      "game_type": "Draw Blind",
+      "game_info": "To win this Draw Blind, choose an artist who can get you to guess the answer by drawing clues on paper with no talking, letters or symbols. The artist's eyes must stay closed"
     },
-    "cloodle": {
-      "game_type": "Cloodle",
-      "game_info": "To win this Cloodle, choose an artist who can get you to guess the answer by drawing clues on paper with no talking, letters or symbols"
+    "draw": {
+      "game_type": "Draw",
+      "game_info": "To win this Draw, choose an artist who can get you to guess the answer by drawing clues on paper with no talking, letters or symbols"
     }
   },
-  "data_head": {
-    "odd_couple": {
-      "game_type": "Odd Couple",
-      "game_info": "To win this Odd Couple, your team must correctly pick the two things that do not belong on the list above."
+  "trivia": {
+    "odd_bunch": {
+      "game_type": "Odd Bunch",
+      "game_info": "To win this Odd Bunch, your team must correctly pick the two things that do not belong on the list above."
     },
-    "selectaquest": {
-      "game_type": "Selectaquest",
-      "game_info": "To win this Selectaquest, your team must correctly answer the multiple-choice question above"
+    "selecting_quest": {
+      "game_type": "Selecting Quest",
+      "game_info": "To win this Selecting Quest, your team must correctly answer the multiple-choice question above"
     },
-    "polygraph": {
-      "game_type": "Polygraph",
-      "game_info": "To win this Polygraph, your team must determine whether the statement above is true or false"
+    "poly_g": {
+      "game_type": "Poly G",
+      "game_info": "To win this Poly G, your team must determine whether the statement above is true or false"
     },
-    "factoid": {
-      "game_type": "Factoid",
-      "game_info": "To win this Factoid, your team must correctly answer the question "
+    "fact_me": {
+      "game_type": "Fact Me",
+      "game_info": "To win this Fact Me, your team must correctly answer the question above"
     }
   },
-  "star_performer": {
-    "copycat": {
-      "game_type": "Copycat",
-      "game_info": "To win this Copycat, choose a performer from your team who can get you to guess the answer by acting like the famous person or character. The performer can talk like the person but cannot say names of people or places"
+  "performer": {
+    "copier": {
+      "game_type": "Copier",
+      "game_info": "To win this Copier, choose a performer from your team who can get you to guess the answer by acting like the famous person or character. The performer can talk like the person but cannot say names of people or places"
     },
-    "humdinger": {
-      "game_type": "Humdinger",
-      "game_info": "To win this Humdinger, choose a performer from your team who can get you to guess the song by humming or whistling with no lyrics or gestures"
+    "bum_flinger": {
+      "game_type": "Bum Flinger",
+      "game_info": "To win this Bum Flinger, choose a performer from your team who can get you to guess the song by humming or whistling with no lyrics or gestures"
     },
-    "sideshow": {
-      "game_type": "Sideshow",
-      "game_info": "To win this Sideshow, choose a performer from your team who can get you to guess the answer by moving a team-mate's arms and legs like a puppet, with no talking or sound effects. The puppet can help guess the answer"
+    "puppet": {
+      "game_type": "Puppet",
+      "game_info": "To win this Slideshow, choose a performer from your team who can get you to guess the answer by moving a team-mate's arms and legs like a puppet, with no talking or sound effects. The puppet can help guess the answer"
     },
-    "cameo": {
-      "game_type": "Cameo",
-      "game_info": "To win this Cameo, choose a performer from your team who can get you to guess the answer by acting out silect clues, just like charades"
+    "charades": {
+      "game_type": "Charades",
+      "game_info": "To win this Charades, choose a performer from your team who can get you to guess the answer by acting out silect clues"
     }
   },
-  "word_worm": {
-    "team_gnilleps": {
-      "game_type": "Team Gnilleps",
-      "game_info": "To win this Team Gnilleps, your team must work together to spell the word above backwards on the first try without writing it down. All players on your team will take alternating turns, adding one letter at a time to spell the word in reverse"
+  "words": {
+    "team_spelling": {
+      "game_type": "Team Spelling",
+      "game_info": "To win this Team Spelling, your team must work together to spell the word above backwards on the first try without writing it down. All players on your team will take alternating turns, adding one letter at a time to spell the word in reverse"
     },
-    "gnilleps": {
-      "game_type": "Gnilleps",
-      "game_info": "To win this Gnilleps, choose a speller from your team who can spell the word above backwards on the first try without writing it down"
+    "spelling": {
+      "game_type": "Spelling",
+      "game_info": "To win this Spelling, choose a speller from your team who can spell the word above backwards on the first try without writing it down"
     },
-    "zelpuz": {
-      "game_type": "Zelpuz",
-      "game_info": "To win this Zelpuz, your team must rearrange the letters above to find the answer"
+    "anagram": {
+      "game_type": "Anagram",
+      "game_info": "To win this Anagram, your team must rearrange the letters above to find the answer"
     }
   }
 }
