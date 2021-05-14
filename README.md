@@ -1,2 +1,3 @@
-# card_generator
-An activity card generating app made using Vuetify
+# Card Generator
+
+A vuetify app for generating new activity cards from scraped data

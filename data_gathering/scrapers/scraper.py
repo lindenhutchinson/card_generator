@@ -17,6 +17,10 @@ class Scraper(Common):
             'answers': []
         }
 
+    def print_progress(self, current, total):
+        os.system('cls')
+        print(f"scraping data {current}/{total}")
+
     def get_soup(self, url=''):
         if url:
             page = requests.get(url)

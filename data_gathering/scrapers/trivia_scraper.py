@@ -4,9 +4,10 @@ import random
 import numpy as np
 import json
 from urllib.parse import unquote
+import os
 
 
-class BooleanTriviaScraper(Scraper):
+class TriviaScraper(Scraper):
     def __init__(self, output_file, url_list):
         self.output_file = output_file
         self.data = {
@@ -20,27 +21,23 @@ class BooleanTriviaScraper(Scraper):
         trivia_data = json.loads(requests.get(url).content)
 
         for td in trivia_data['results']:
-            answers = [ans for ans in td['incorrect_answers']]
-            answers.append(td['correct_answer'])
-            random.shuffle(answers)
-            correct_answer = ''
-            f_answers = []
-            for i, ans in enumerate(answers):
-                answer = unquote(ans)
-                f_answers.append(answer)
-                if i == answers.index(td['correct_answer']):
-                    correct_answer = answer
+            answer = unquote(td['correct_answer'])
+            game_text = unquote(td['question'])
+
+            if 'the following' in game_text:
+                continue
 
             data.append({
-                'answers': [correct_answer],
-                'game_text': unquote(td['question'])
+                'answers': [answer],
+                'game_text': game_text
             })
 
         return data
 
     def run(self):
         data = []
-        for url in self.url_list:
+        for i, url in enumerate(self.url_list):
+            self.print_progress(i, len(self.url_list))
             data = np.concatenate((data, self.get_data_from_api(url))).tolist()
 
         self.write_to_json(data)
@@ -50,7 +47,7 @@ if __name__ == "__main__":
     token = json.loads(requests.get(
         'https://opentdb.com/api_token.php?command=request').content)
     urls = [
-        f"https://opentdb.com/api.php?amount=50&type=boolean&encode=url3986&token={token['token']}" for _ in range(10)]
+        f"https://opentdb.com/api.php?amount=50&difficulty=easy&type=multiple&encode=url3986&token={token['token']}" for _ in range(50)]
 
-    scraper = BooleanTriviaScraper('../data/bool_trivia_data.json', urls)
+    scraper = TriviaScraper('../data/trivia_data.json', urls)
     scraper.run()

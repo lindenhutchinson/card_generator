@@ -14,17 +14,13 @@
     }
   },
   "trivia": {
-    "odd_bunch": {
-      "game_type": "Odd Bunch",
-      "game_info": "To win this Odd Bunch, your team must correctly pick the two things that do not belong on the list above."
+    "multiple_choice": {
+      "game_type": "Multiple Choice",
+      "game_info": "To win this Multiple Choice, your team must correctly answer the multiple-choice question above"
     },
-    "selecting_quest": {
-      "game_type": "Selecting Quest",
-      "game_info": "To win this Selecting Quest, your team must correctly answer the multiple-choice question above"
-    },
-    "poly_g": {
-      "game_type": "Poly G",
-      "game_info": "To win this Poly G, your team must determine whether the statement above is true or false"
+    "true_false": {
+      "game_type": "True or False",
+      "game_info": "To win this True or False, your team must determine whether the statement above is true or false"
     },
     "fact_me": {
       "game_type": "Fact Me",
@@ -36,13 +32,13 @@
       "game_type": "Copier",
       "game_info": "To win this Copier, choose a performer from your team who can get you to guess the answer by acting like the famous person or character. The performer can talk like the person but cannot say names of people or places"
     },
-    "bum_flinger": {
-      "game_type": "Bum Flinger",
-      "game_info": "To win this Bum Flinger, choose a performer from your team who can get you to guess the song by humming or whistling with no lyrics or gestures"
+    "humalong": {
+      "game_type": "Humalong",
+      "game_info": "To win this Humalong, choose a performer from your team who can get you to guess the song by humming or whistling with no lyrics or gestures"
     },
     "puppet": {
       "game_type": "Puppet",
-      "game_info": "To win this Slideshow, choose a performer from your team who can get you to guess the answer by moving a team-mate's arms and legs like a puppet, with no talking or sound effects. The puppet can help guess the answer"
+      "game_info": "To win this Puppet, choose a performer from your team who can get you to guess the answer by moving a team-mate's arms and legs like a puppet, with no talking or sound effects. The puppet can help guess the answer"
     },
     "charades": {
       "game_type": "Charades",

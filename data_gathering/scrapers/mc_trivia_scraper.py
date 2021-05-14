@@ -54,7 +54,7 @@ if __name__ == "__main__":
     token = json.loads(requests.get(
         'https://opentdb.com/api_token.php?command=request').content)
     urls = [
-        f"https://opentdb.com/api.php?amount=50&type=multiple&encode=url3986&token={token['token']}" for i in range(10)]
+        f"https://opentdb.com/api.php?amount=50&type=multiple&encode=url3986&token={token['token']}" for _ in range(10)]
 
     scraper = MultipleChoiceScraper('../data/mc_trivia_data.json', urls)
     scraper.run()

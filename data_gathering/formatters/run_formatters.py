@@ -20,7 +20,7 @@ if __name__ == '__main__':
         # STAR PERFORMER
         {
             'data_files': [data_dir + 'song_data.json', data_dir + 'singalong_song.json'],
-            'output_file': format_dir + 'bum_flinger.json',
+            'output_file': format_dir + 'humalong.json',
         },
         {
             'data_files': [data_dir + 'celebrity_data.json'],
@@ -42,11 +42,15 @@ if __name__ == '__main__':
         # DATA HEAD
         {
             'data_files': [data_dir + 'mc_trivia_data.json'],
-            'output_file': format_dir + 'selecting_quest.json'
+            'output_file': format_dir + 'multiple_choice.json'
         },
         {
             'data_files': [data_dir + 'bool_trivia_data.json'],
-            'output_file': format_dir + 'poly_g.json'
+            'output_file': format_dir + 'true_false.json'
+        },
+        {
+            'data_files': [data_dir + 'trivia_data.json'],
+            'output_file': format_dir + 'fact_me.json'
         },
     ]
 

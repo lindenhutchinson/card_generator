@@ -1,14 +1,15 @@
 import drawData from "../data/draw.json";
 import sculptData from "../data/sculpt.json";
 import draw_blindData from "../data/draw_blind.json";
-import bum_flingerData from "../data/bum_flinger.json";
+import bumFlingerData from "../data/humalong.json";
 import puppetData from "../data/puppet.json";
 import charadesData from "../data/charades.json";
 import copierData from "../data/copier.json";
 import spellingData from "../data/spelling.json";
 import anagramData from "../data/anagram.json";
-import selecting_questData from "../data/selecting_quest.json";
-import poly_gData from "../data/poly_g.json"
+import selecting_questData from "../data/multiple_choice.json";
+import poly_gData from "../data/true_false.json";
+import factMeData from "../data/fact_me.json";
 
 export const game_types_data = {
     'creative': {
@@ -17,16 +18,15 @@ export const game_types_data = {
         'draw': drawData,
     },
     'performer': {
-        'bum_flinger': bum_flingerData,
+        'humalong': bumFlingerData,
         'charades': charadesData,
         'puppet': puppetData,
         'copier': copierData
     },
     'trivia': {
-        'odd_bunch': selecting_questData,
-        'selecting_quest': selecting_questData,
-        'fact_me': poly_gData,
-        'poly_g': poly_gData,
+        'multiple_choice': selecting_questData,
+        'fact_me': factMeData,
+        'true_false': poly_gData,
     },
     'words': {
         'team_spelling': spellingData,
@@ -73,9 +73,9 @@ export const game_types = {
         },
     },
     'performer': {
-        'bum_flinger': {
-            label: 'Bum Flinger',
-            value: 'bum_flinger',
+        'humalong': {
+            label: 'Humalong',
+            value: 'humalong',
         },
         'charades': {
             label: 'Charades',
@@ -91,21 +91,17 @@ export const game_types = {
         },
     },
     'trivia': {
-        'poly_g': {
-            label: 'Poly G',
-            value: 'poly_g',
-        },
-        'odd_bunch': {
-            label: 'Odd Bunch',
-            value: 'odd_bunch',
+        'true_false': {
+            label: 'True or False',
+            value: 'true_false',
         },
         'fact_me': {
             label: 'Fact Me',
             value: 'fact_me',
         },
-        'selecting_quest': {
-            label: 'Selecting Quest',
-            value: 'selecting_quest',
+        'multiple_choice': {
+            label: 'Multiple Choice',
+            value: 'multiple_choice',
         },
     },
     'words': {

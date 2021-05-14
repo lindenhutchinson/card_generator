@@ -53,7 +53,8 @@ if __name__ == "__main__":
             'http://www.english-for-students.com/Anagrams-of-TV-World.html',
             'http://www.english-for-students.com/Anagrams-of-famous-people.html',
             'http://www.english-for-students.com/Anagrams-of-Food-and-Drinks.html',
-            'http://www.english-for-students.com/Anagrams-Politics.html']
+            'http://www.english-for-students.com/Anagrams-Politics.html',
+            'http://www.english-for-students.com/Anagrams-of-Sports.html']
 
     scraper = AnagramScraper('../../src/data/anagram.json', urls)
     scraper.run()
