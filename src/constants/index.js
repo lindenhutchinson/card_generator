@@ -4,7 +4,7 @@ import draw_blindData from "../data/draw_blind.json";
 import bumFlingerData from "../data/humalong.json";
 import puppetData from "../data/puppet.json";
 import charadesData from "../data/charades.json";
-import copierData from "../data/copier.json";
+import copyData from "../data/copy.json";
 import spellingData from "../data/spelling.json";
 import anagramData from "../data/anagram.json";
 import selecting_questData from "../data/multiple_choice.json";
@@ -21,7 +21,7 @@ export const game_types_data = {
         'humalong': bumFlingerData,
         'charades': charadesData,
         'puppet': puppetData,
-        'copier': copierData
+        'copy': copyData
     },
     'trivia': {
         'multiple_choice': selecting_questData,
@@ -85,9 +85,9 @@ export const game_types = {
             label: 'Puppet',
             value: 'puppet',
         },
-        'copier': {
-            label: 'Copier',
-            value: 'copier',
+        'copy': {
+            label: 'Copy',
+            value: 'copy',
         },
     },
     'trivia': {

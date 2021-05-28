@@ -28,9 +28,9 @@
     }
   },
   "performer": {
-    "copier": {
-      "game_type": "Copier",
-      "game_info": "To win this Copier, choose a performer from your team who can get you to guess the answer by acting like the famous person or character. The performer can talk like the person but cannot say names of people or places"
+    "copy": {
+      "game_type": "Copy",
+      "game_info": "To win this Copy, choose a performer from your team who can get you to guess the answer by acting like the famous person or character. The performer can talk like the person but cannot say names of people or places"
     },
     "humalong": {
       "game_type": "Humalong",
